@@ -24,10 +24,6 @@ describe("test get api key", () => {
   test("missing apikey", () => {
     expect(getAPIKey(invalidHeader2)).toBeNull();
   });
-
-  test("broken one", () => {
-    expect(getAPIKey(validHeader)).toBeNull();
-  });
 });
 
 // export function getAPIKey(headers: IncomingHttpHeaders): string | null {
